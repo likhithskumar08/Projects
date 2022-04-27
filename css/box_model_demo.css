@@ -1,0 +1,54 @@
+div {
+    width: 300px;
+    height: 150px;
+    background-color: aquamarine;
+    text-align: justify;
+}
+
+h1 {
+    background-color: red;
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 10px;
+    padding-top: 50px;
+    margin: 5px 5px 20px 0px;
+}
+
+#one {
+    background-color: rgb(58, 196, 88) border cornflowerblue;
+    border-color: blueviolet;
+    border-style: solid;
+    border-radius: 10%;
+    border-left-style: dotted;
+    box-sizing: border-box;
+}
+
+#two {
+    background-color: yellow;
+    border: rgb(58, 196, 88);
+    border-color: rgb(118, 151, 80);
+    border-style: dashed;
+    border-radius: 10%;
+    border-right-style: dotted;
+    box-sizing: border-box;
+}
+
+#three {
+    background-color: rgb(58, 196, 88) border cornflowerblue;
+    border-color: blueviolet;
+    border-style: solid;
+    border-radius: 10%;
+    border-left-style: dotted;
+    box-sizing: border-box;
+    margin-left: 50px;
+}
+
+button {
+    padding: 25px 10px 5px;
+    width: 100px;
+    align-self: center;
+}

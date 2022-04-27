@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./forms_demo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms demo</title>
+
+</head>
+
+<body>
+    <h1>forms demo</h1>
+    <!-- simply type form-->
+    <form action="/tacos">
+        <p>
+            <label for="button">Do not submit this button</label>
+            <input type="button" placeholder="button" id="button">
+        </p>
+        <p>
+            <label for="cheese"><b>Do you like cheese?</b></label> <!-- type label-->
+            <input type="checkbox" name="cheese" id="cheese">
+        </p>
+        <p>
+            <label for="username"><b>Enter your username</b></label>
+            <input type="text" placeholder="username" name="username">
+        </p>
+        <label for=" password"><b>Enter your password</b></label>
+        <input type="password" placeholder="password" id="password" name="password">
+        <p>
+            <label for="color">Pick the color</label>
+            <input type="color" id="" color>
+        </p>
+        <button>submit</button>
+        <button type="submit">do not submit</button>
+        <p>
+        <h2>hijacking search</h2>
+        <button>not inside form</button>
+        <p>
+        <form action="https://www.google.com">
+            <input type="text" name="q" id="search">
+            <button>search google</button>
+        </form>
+        </p>
+
+        </p>
+    </form>
+    <!-- common input types-->
+
+</body>
+
+</html>

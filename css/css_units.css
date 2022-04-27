@@ -1,0 +1,27 @@
+article {
+    font-size: 30px;
+}
+
+
+
+button {
+    background-color: aliceblue;
+    color: black;
+    font-size: 2em;
+}
+
+#ch {
+    font-size: 5px;
+}
+
+#ch+p {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+li {
+    font-size: 2rem;
+}
