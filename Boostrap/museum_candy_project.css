@@ -1,5 +1,5 @@
 body {
-    background-color: #f5d9df;
+    background-color: #d2b88c;
     font-family: "nunito", sans-serif;
 }
 
@@ -19,3 +19,21 @@ body {
 #mainNavbar .navbar-brand {
     color: #EA1C2C;
 }
+
+#headingGroup span {
+    color: red;
+}
+
+#headingGroup h1 {
+    font-weight: 200;
+}
+
+#mainNavbar a {
+    font-weight: 500;
+}
+
+@media (max-width:1200px) {
+    body {
+        background-color: rgb(82, 161, 122);
+    }
+} 
