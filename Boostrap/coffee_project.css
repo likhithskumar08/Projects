@@ -1,0 +1,39 @@
+body {
+    background-color: #d2b88c;
+    font-family: "nunito", sans-serif;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #EA1C2C
+}
+
+#mainNavbar .navbar-brand {
+    color: #EA1C2C;
+}
+
+#headingGroup span {
+    color: red;
+}
+
+#headingGroup h1 {
+    font-weight: 200;
+}
+
+#mainNavbar a {
+    font-weight: 500;
+}
+
+@media (max-width:1200px) {
+    body {
+        background-color: rgb(82, 161, 122);
+    }
+} 
