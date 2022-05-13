@@ -42,8 +42,8 @@ const restaurant = {
         console.log(`the name is ${this.name} and the adress is ${this.state}`)
     }
 }
-const { name: namee, ...all } = restaurant;
-const { zzz = "nan" } = restaurant
+const { name: suhesh, ...all } = restaurant;
+const { Species = "Man" } = restaurant;
 console.log(restaurant)
 
 
