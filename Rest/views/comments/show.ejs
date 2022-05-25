@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show</title>
+</head>
+
+<body>
+    <h1>Comment id: <%= comment.id %>
+    </h1>
+    <h2>
+        <%= comment.comment %> - <%= comment.username %>
+                <!-- in comments the array is comment and within each comment the 
+        there is comment and username, to get that we must use above code-->
+                <a href="/comments">Back to index</a>
+                <a href="/comments/<%=comment.id%>/edit">Edit</a>
+                <form action="/comments/<%= comment.id %>?_method=DELETE">
+                    <button>DELETE</button>
+                </form>
+    </h2>
+</body>
+
+</html>

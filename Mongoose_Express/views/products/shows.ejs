@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%=product1.name%>
+            <!--the file path is defined app.get of index.js-->
+    </title>
+</head>
+
+<body>
+    <h1>
+        <%= product1.name %>
+            <!--the product is declared in a flower bracket in order to show it hear after the path length to this file is specified-->
+    </h1>
+    <ul>
+        <li>Price: <%= product1.price%>
+                <!--we'll be specifying exactly what to get within product1 show me the cost> -->
+        </li>
+        <li>Category: <%= product1.category%>`
+        </li>
+    </ul>
+
+    <a href="/products">All products</a>
+    <!--to go back to main page-->
+</body>
+
+</html>
