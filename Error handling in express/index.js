@@ -1,8 +1,7 @@
 const express = require('express');
-const res = require('express/lib/response');
 const app = express();
 const morgan = require('morgan');
-const Apperror = require('./Apperror')
+
 // app.use(morgan('common'))
 app.use(morgan('tiny'))
 
@@ -82,10 +81,6 @@ app.get('/secret', verifyPassword, (req, res) => {
     res.send('secrets: none persay')
 })
 
-app.get('/admin', (req, res) => {
-    throw new Apperror('You are not an Admin!', 403)
-})
-
 //if none of the above matched then the below code will be executed.
 app.use((req, res) => {
     res.status(404).send('Not found!')
@@ -104,15 +99,6 @@ app.use((err, req, res, next) => {
     console.log(err);
     next(err);
 })
-
-app.use((err, req, next) => {
-    const { status = 500, message = 'Something went wrong' } = err
-    res.send(message);
-})
-// app.use((err, req, next) => {
-//     const { status = 500 } = err
-//     res.status(status).send('Errorrrr!!!')
-// })
 
 
 app.listen(3000, () => {
