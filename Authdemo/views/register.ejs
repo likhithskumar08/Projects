@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <style>
+        body {
+            background-color: azure;
+        }
+    </style>
+</head>
+
+<body style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; height: 90vh;">
+    <div style=" background-color: whitesmoke; margin-left:25%; margin-right:30%; border:2px dashed black;
+    border-radius: 10px; margin-top: 35vh; padding-right: 10px; opacity: (0, 0, 0, 5);">
+        <h1
+            style="margin-bottom: 3px; background-color: brown; text-align: center; display:inline-block; padding: 5px;border-radius: 5px; color:wheat; margin-left:42%; letter-spacing: 2px;">
+            Sign Up</h1>
+        <form action="/register" method="POST" style="margin-left:30%; box-shadow:10px;">
+            <div style="margin-bottom: 10px ;">
+                <label for="username"> Enter Username :</label>
+                <input type="text" id="username" name="username" placeholder="username" style=" text-align:center;
+                    border-radius:5px;">
+            </div>
+            <div style="margin-bottom: px;">
+                <label for="password">Enter Password:</label>
+                <input type="password" id="password" name="password" placeholder="password"
+                    style="text-align:center; border-radius:5px;">
+            </div>
+            <button type="submit"
+                style="background-color: rgb(88, 179, 115); border: 2px solid black; 
+           border-radius: 10px; margin-bottom: 5px; margin-left: 25%; margin-top: 10px; padding: 2px 6px; color: white;  ">Sign-Up</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
