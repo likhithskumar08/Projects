@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Plus:ital@1&display=swap");
+
+body {
+  background: url("https://i.pinimg.com/originals/34/a3/a7/34a3a7dd237d7b56193ec28d9b547909.jpg")
+    no-repeat;
+  background-size: cover;
+}
+
+#block {
+  display: flex;
+  margin: 25vh 20vh 0px 20vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+#header {
+  /* background-color: black; */
+  font-family: "Gentium Plus", serif;
+  padding: 1rem;
+  border-radius: 15px;
+  color: aliceblue;
+}
+
+#info {
+  margin-left: 20%;
+  margin-right: 20%;
+  /* background-color: black; */
+  padding: 1rem;
+  border-radius: 15px;
+  color: beige;
+}
+
+#btn:hover {
+  background-color: rgb(110, 248, 218);
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s;
+  border-color: black;
+  border-radius: 30px;
+  color: black;
+  /* padding: 0.5rem; */
+  /* margin: 0.5rem; */
+  font-weight: 600;
+}
+
+@media screen and (min-width: 200px) and (max-width: 544px) {
+  #btn {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 220px) and (max-width: 550px) {
+  #block {
+    size: 0.5%;
+    margin-top: 10vh;
+  }
+  body {
+    background: url("http://images.unsplash.com/photo-1470246973918-29a93221c455?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8dGVudCUyMGNhbXBpbmd8fDB8fHx8MTYxODk5MDM3OQ&ixlib=rb-1.2.1&q=80&w=1080");
+    background-size: cover;
+  }
+}

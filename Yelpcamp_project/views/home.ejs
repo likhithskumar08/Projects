@@ -1,3 +1,74 @@
-<% layout('./layouts/boilerplate') %>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yelpcamp Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
 
-<h1 class="text-center">Welcome to Yelp-Camp</h1>
+    <link rel="stylesheet" href="./stylesheets/home.css">
+  </head>
+  <body>
+    <body class="d-flex flex-column vh-100">
+      <nav><nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Campsite</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav col-md-10">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/campgrounds">Camp Grounds</a>
+        <a class="nav-link" href="/campgrounds/new">New Campground</a>
+      </div>
+
+      <div class="navbar-nav col-md-2">
+        <% if(!currentUser) { %>
+        <a href="/login" class="nav-link">Login</a>
+        <a href="/register" class="nav-link">Register</a>
+        <% } else { %>
+        <a href="/logout" class="nav-link">Logout</a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</nav>
+</nav>
+
+    <div class="text-center" id="block">
+<h2 class="" id="header">Welcome to Yelp-camp</h2>
+<p class="" id="info">Jump in! and Explore our campgrounds, plan your adventures ahead..</p>
+<a href="/campgrounds"class="btn btn-light text-dark" id="btn">View campgrounds</a>
+    </div>
+
+
+    <footer class="footer py-3 mt-auto shadow-5-strong">
+  <div class="container text-center">
+    <span class="text-light fs-5 text font-weight-normal">&copy;2022</span>
+  </div>
+</footer>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+ 
+  </body>
+</html>
