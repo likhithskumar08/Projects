@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Source+Sans+Pro:ital,wght@1,600&family=Space+Mono:ital,wght@1,700&family=Ubuntu&display=swap");
+.container {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(78, 74, 74, 0.774);
+  display: flex;
+}
+
+.items {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  margin-right: 25px;
+}
+
+ul li {
+  list-style-type: none;
+  margin-left: 30px;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20x;
+  color: rgb(231, 229, 225);
+}
+
+#logo {
+  position: absolute;
+  top: -18px;
+  left: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: rgb(196, 238, 213);
+}
+
+#logo:hover {
+  color: rgb(241, 212, 212);
+}
+
+a:hover {
+  color: rgb(247, 240, 240);
+}

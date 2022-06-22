@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Source+Sans+Pro:ital,wght@1,600&family=Space+Mono:ital,wght@1,700&family=Ubuntu&display=swap");
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo {
+  width: 50vw;
+  height: 39px;
+  text-align: center;
+}
+
+.todo:focus {
+  outline: none;
+}
+
+.name {
+  display: block;
+  background-color: purple;
+  height: 33px;
+  padding-top: 12px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 8px 0px 0px 8px;
+  font-family: "Josefin Sans", sans-serif;
+  color: whitesmoke;
+}
+
+.b {
+  width: 35px;
+  height: 48px;
+  background-color: rgb(88, 74, 56);
+  border-radius: 0px 8px 8px 0px;
+}
+
+.b:hover {
+  background-color: rgb(197, 196, 255);
+}
+
+.fas {
+  font-size: 25px;
+  color: rgb(238, 236, 240);
+}
+
+.fas:hover {
+  color: rgb(22, 25, 27);
+}
+
+input::placeholder {
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+input[type="text"],
+textarea {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  border: 2px solid brown;
+  font-size: 20px;
+}
